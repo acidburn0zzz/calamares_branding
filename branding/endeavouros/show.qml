@@ -41,8 +41,8 @@ Presentation
 
         Image {
             id: background_2
-            source: "terminal-slide.png"
-            width: 617; height: 430
+            source: "02_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -54,8 +54,8 @@ Presentation
 
         Image {
             id: background_3
-            source: "community-slide.png"
-            width: 617; height: 430
+ 	    source: "03_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -66,8 +66,8 @@ Presentation
 
         Image {
             id: background_4
-            source: "forum-slide.png"
-            width: 617; height: 430
+ 	    source: "04_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -78,8 +78,8 @@ Presentation
 
         Image {
             id: background_5
-            source: "distribution-slide.png"
-            width: 617; height: 430
+ 	    source: "05_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -90,8 +90,8 @@ Presentation
 
         Image {
             id: background_6
-            source: "development-slide.png"
-            width: 617; height: 430
+ 	    source: "06_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -102,14 +102,49 @@ Presentation
 
         Image {
             id: background_7
-            source: "softlanding-slide.png"
-            width: 617; height: 430
+ 	    source: "07_endeavouros_slide.png"
+            width: 1661; height: 1080
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
 
     }
 
+            Slide {
+
+        Image {
+            id: background_8
+ 	    source: "08_endeavouros_slide.png"
+            width: 1661; height: 1080
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+
+    }
+
+            Slide {
+
+        Image {
+            id: background_9
+ 	    source: "09_endeavouros_slide.png"
+            width: 1661; height: 1080
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+
+    }
+
+            Slide {
+
+        Image {
+            id: background_10
+ 	    source: "10_endeavouros_slide.png"
+            width: 1661; height: 1080
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+
+    }
 
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
