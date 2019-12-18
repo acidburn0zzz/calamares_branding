@@ -1,2 +1,2 @@
 # calamares_branding
-tests with @joekamprad, @fernandomaroto and @FLVAL
+@FLVAL works of art!
