@@ -1,4 +1,4 @@
- # Product branding information. This influences some global
+# Product branding information. This influences some global
 # user-visible aspects of Calamares, such as the product
 # name, window behavior, and the slideshow during installation.
 #
@@ -91,7 +91,7 @@ strings:
 images:
     productLogo:         "EndeavourOS-logo.png"
     productIcon:         "EndeavourOS-icon.png"
-    productWelcome:      "language.png"
+    productWelcome:      "01_endeavouros_lang.png"
 
 # The slideshow is displayed during execution steps (e.g. when the
 # installer is actually writing to disk and doing other slow things).
