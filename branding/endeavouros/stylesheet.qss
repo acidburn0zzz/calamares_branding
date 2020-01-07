@@ -16,13 +16,170 @@ object names (ids), which you can find through debugging tools.
 
 */
 
-/* Main application window.
+/* Main application window. */
 
-#mainApp { }
-#logoApp { }
-#sidebarApp { }
-#sidebarMenuApp { }
-*/
+#mainApp {
+	background-color: #9B99B7;
+}
+
+#mainText {
+	font : 16px;
+	color: #383370;
+}
+
+#sidebarApp {
+	background-color: #06004C;
+}
+
+#logoApp {
+	background-color: #06004C;
+}
+
+#sidebarMenuApp {
+	background-color: #06004C;
+	padding-top: 30px;
+}
+
+QLabel {
+	font : 16px;
+        color: #06004C;
+}
+
+#languageWidget {
+	font : 16px;
+	color: #06004C;
+}
+
+#debugButton {
+	color: #9B99B7;
+}
+
+#aboutButton {
+	font : 16px;
+	color: #06004C;
+}
+
+QTextEdit, QListView {
+    	background-color: #CDCCDB;
+    	font : 16px;
+    	color: #06004C;
+}
+
+QListView::item:alternate {
+	background: #06004C;
+	color: white;
+}
+
+QListView::item:selected:active {
+	background: #06004C;
+	color: white;
+}
+
+QListView::item:selected:!active {
+	background: #06004C;
+	color: white;
+}
+
+QListView::item:hover {
+	background: #06004C;
+	color: white;
+}
+
+QComboBox {
+	background: #CDCCDB;
+    	font: 16px;
+    	color: #06004C;
+}
+
+QComboBox::item:selected {
+	background: #06004C;
+    	font: 16px;
+    	color: #CDCCDB;
+	padding: 5px;
+}
+
+#LE_TestKeyboard {
+    	font : 16px;
+    	color: #383370;
+}
+
+QToolTip {
+	background: #52134C;
+        font : 18px;
+	color: #DCD0DB;
+	border: none;
+	padding: 5px;
+}
+
+QPushButton#view-button-back, QPushButton#view-button-next, QPushButton#view-button-cancel, QPushButton#buttonRestore, QPushButton#view-button-modify {
+    	background-color: #CDCCDB;
+    	border: none;
+    	font: bold 16px;
+    	color: #383370;
+    	min-width: 4em;
+    	padding: 6px;
+    	opacity: 61;
+}
+
+QPushButton#view-button-back:pressed, QPushButton#view-button-next:pressed {
+    	background-color: #FF7F7F;
+    	font: bold 16px;
+    	color: #CDCCDB;
+    	min-width: 4em;
+    	padding: 6px;
+}
+
+QPushButton#view-button-back:hover, QPushButton#view-button-next:hover, QPushButton#view-button-cancel:hover, QPushButton#buttonRestore:hover, QPushButton#view-button-modify:hover {
+	background-color: #383370;
+	font: bold 16px;
+	color: #CDCCDB;
+	min-width: 4em;
+    	padding: 6px;
+}
+
+#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, #textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, #textBoxAutoLogin {
+	font: 16px;
+        color: #06004C;
+}
+
+#labelFullName {
+	font: 16px;
+        color: #52134C;
+}
+
+QCheckBox::indicator:unchecked {
+	font: 16px;
+        color: #06004C;
+    	width: 16px;
+    	height: 16px;
+}
+
+QCheckBox::indicator:checked {
+	font: 16px;
+        text-color: #06004C;
+    	width: 16px;
+    	height: 16px;
+}
+
+#FinishedPage #mainText {
+	font : 16px;
+	color: #383370;
+}
+
+#summaryStep {
+	background: #9B99B7;
+	font: 16px;
+        text-color: #06004C;
+}
+
+#restartCheckBox {
+	font: 16px;
+        color: #06004C;
+}
+
+#presentation {
+	background-color: #9B99B7;
+}
 
 /* Partitioning module.
 
@@ -33,6 +190,7 @@ object names (ids), which you can find through debugging tools.
 #scrollAreaWidgetContents { }
 #partitionBarView { }
 */
+
 
 /* Licensing module.
 

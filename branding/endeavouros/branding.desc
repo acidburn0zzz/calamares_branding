@@ -24,7 +24,7 @@ welcomeExpandingLogo:   true
 #  - "normal" or unset, expand as needed, use *windowSize*
 #  - "fullscreen", start as large as possible, ignore *windowSize*
 #  - "noexpand", don't expand automatically, use *windowSize*
-windowExpanding:    normal
+windowExpanding:    fullscreen
 
 # Size of Calamares window, expressed as w,h. Both w and h
 # may be either pixels (suffix px) or font-units (suffix em).
@@ -120,7 +120,7 @@ slideshowAPI: 1
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#2A153F"
-   sidebarText:          "#958A9F"
-   sidebarTextSelect:    "#CCC639"
-   sidebarTextHighlight: "#221132"
+   sidebarBackground:    "#06004C"
+   sidebarText:          "#9B99B7"
+   sidebarTextSelect:    "#ffffff"
+   sidebarTextHighlight: "#383370"
