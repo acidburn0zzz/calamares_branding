@@ -16,15 +16,17 @@ object names (ids), which you can find through debugging tools.
 
 */
 
+/* color1: #06004C */ /* color7: #06004C */
+/* color2: #383370 */ /* color8: #383370 */
+/* color3: #6A6694 */ /* color9: #6A6694 */
+/* color4: #9B99B7 */ /* color10: #9B99B7 */
+/* color5: #CDCCDB */ /* color11: #CDCCDB */
+/* color5: #E3E3EA */ /* color12: #E3E3EA */
+
 /* Main application window. */
 
-#mainApp {
-	background-color: #9B99B7;
-}
-
 #mainText {
-	font : 16px;
-	color: #383370;
+	color: #06004C;
 }
 
 #sidebarApp {
@@ -41,22 +43,49 @@ object names (ids), which you can find through debugging tools.
 }
 
 QLabel {
-	font : 16px;
+	font: 16px;
         color: #06004C;
 }
 
 #languageWidget {
-	font : 16px;
+	font: 16px;
 	color: #06004C;
 }
 
 #debugButton {
+	background-color: none;
 	color: #9B99B7;
+	font: 13px;
 }
 
 #aboutButton {
+	background-color: none;
 	font : 16px;
 	color: #06004C;
+}
+
+#aboutButton:hover {
+	background-color: none;
+	font : 16px;
+	color: #FFFFFF;
+}
+
+#aboutButton:pressed {
+	background-color: none;
+	font : 16px;
+	color: #FF7F7F;
+}
+
+PartitionLabelsView:text {
+	font: 16px;
+	text-color: #06004C;
+
+}
+
+QWidget {
+	Background-color: #CDCCDB;
+	font: 16px;
+	text-color: #06004C;
 }
 
 QTextEdit, QListView {
@@ -105,33 +134,85 @@ QComboBox::item:selected {
 
 QToolTip {
 	background: #52134C;
-        font : 18px;
+        font : 17px;
 	color: #DCD0DB;
 	border: none;
 	padding: 5px;
 }
 
-QPushButton#view-button-back, QPushButton#view-button-next, QPushButton#view-button-cancel, QPushButton#buttonRestore, QPushButton#view-button-modify {
-    	background-color: #CDCCDB;
-    	border: none;
-    	font: bold 16px;
-    	color: #383370;
-    	min-width: 4em;
-    	padding: 6px;
-    	opacity: 61;
+QProgressBar {
+	background-color: #9B99B7;
+    	border: 2px solid #06004C;
+   	border-radius: 0px;
+	text-align: center;
+	color: #FFFFFF;
 }
 
-QPushButton#view-button-back:pressed, QPushButton#view-button-next:pressed {
+QProgressBar::chunk {
+    	background-color: #06004C;
+}
+
+QCheckBox {
+	color: #06004C;
+}
+
+QCheckBox::indicator {
+    	width: 16px;
+    	height: 16px;
+}
+
+QRadioButton {    	
+	color: #06004C;
+	padding-left: 3px;
+}
+
+QRadioButton::indicator {    	
+	width: 16px;
+	heiht: 16px;
+}
+
+/*
+QPushButton#buttonRestore {
+	image: url(restore.png);
+}
+*/
+
+/* QPushButton#view-button-back, QPushButton#view-button-next,
+QPushButton#view-button-cancel, QPushButton#buttonRestore,
+QPushButton#view-button-modify, QPushButton#newPartitionTableButton,
+QPushButton#createButton, QPushButton#editButton, 
+QPushButton#newVolumeGroupButton, QPushButton#resizeVolumeGroupButton,
+QPushButton#deactivateVolumeGroupButton, QPushButton#removeVolumeGroupButton,*/
+QPushButton {
+    	background-color: #E3E3EA;
+    	border: none;
+    	font: bold 15px;
+    	color: #06004C;
+    	min-width: 4em;
+    	padding: 6px;
+}
+
+/* QPushButton#view-button-back:pressed, QPushButton#view-button-next:pressed,
+QPushButton#newPartitionTableButton:pressed, QPushButton#createButton:pressed,
+QPushButton#newVolumeGroupButton:pressed, QPushButton#resizeVolumeGroupButton:pressed,
+QPushButton#deactivateVolumeGroupButton:pressed, QPushButton#removeVolumeGroupButton:pressed,*/
+QPushButton:pressed {
     	background-color: #FF7F7F;
-    	font: bold 16px;
+    	font: bold 15px;
     	color: #CDCCDB;
     	min-width: 4em;
     	padding: 6px;
 }
 
-QPushButton#view-button-back:hover, QPushButton#view-button-next:hover, QPushButton#view-button-cancel:hover, QPushButton#buttonRestore:hover, QPushButton#view-button-modify:hover {
-	background-color: #383370;
-	font: bold 16px;
+/* QPushButton#view-button-back:hover, QPushButton#view-button-next:hover,
+QPushButton#view-button-cancel:hover, QPushButton#buttonRestore:hover,
+QPushButton#view-button-modify:hover, QPushButton#newPartitionTableButton:hover,
+QPushButton#createButton:hover, QPushButton#editButton:hover,
+QPushButton#newVolumeGroupButton:hover, QPushButton#resizeVolumeGroupButton:hover,
+QPushButton#deactivateVolumeGroupButton:hover, QPushButton#removeVolumeGroupButton:hover,*/
+QPushButton:hover {
+	background-color: #06004C;
+	font: bold 15px;
 	color: #CDCCDB;
 	min-width: 4em;
     	padding: 6px;
@@ -145,20 +226,6 @@ QPushButton#view-button-back:hover, QPushButton#view-button-next:hover, QPushBut
 #labelFullName {
 	font: 16px;
         color: #52134C;
-}
-
-QCheckBox::indicator:unchecked {
-	font: 16px;
-        color: #06004C;
-    	width: 16px;
-    	height: 16px;
-}
-
-QCheckBox::indicator:checked {
-	font: 16px;
-        text-color: #06004C;
-    	width: 16px;
-    	height: 16px;
 }
 
 #FinishedPage #mainText {
