@@ -130,4 +130,4 @@ style:
    sidebarBackground:    "#06004C"
    sidebarText:          "#CDCCDB"
    sidebarTextSelect:    "#06004C"
-   sidebarTextHighlight: "#E3E3EA"
+   sidebarTextHighlight: "#CDCCDB"
