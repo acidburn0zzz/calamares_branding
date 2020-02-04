@@ -74,10 +74,11 @@ strings:
     versionedName:       EndeavourOS
     shortVersionedName:  EndeavourOS
     bootloaderEntryName: EndeavourOS
-#   productUrl:          https://calamares.io/
-#   supportUrl:          https://github.com/calamares/calamares/issues
-#   knownIssuesUrl:      https://calamares.io/about/
-#   releaseNotesUrl:     https://calamares.io/about/
+#   productUrl:          https://endeavouros.com/
+#   supportUrl:          https://endeavouros.com/forum
+#   knownIssuesUrl:      https://github.com/endeavouros-team/calamares-offlineinstaller/issues
+#   releaseNotesUrl:     https://endeavouros.com/?page_id=83
+
 
 # These images are loaded from the branding module directory.
 #
