@@ -14,7 +14,7 @@ In Calamares, styling widget classes is supported (e.g.
 using `QComboBox` as a selector). You can also use specific
 object names (ids), which you can find through debugging tools.
 
-*/ 
+*/
 
 /* color1: #06004C */ /* color7: #06004C */
 /* color2: #383370 */ /* color8: #383370 */
@@ -199,9 +199,16 @@ QPushButton:hover {
     	padding: 6px;
 }
 
-#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, #textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, #textBoxAutoLogin {
+#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
+#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
+#textBoxAutoLogin {
 	font: 16px;
         color: #06004C;
+}
+
+#restartCheckBox {
+	font: 16px;
+	color: #06004C;
 }
 
 /*
@@ -210,11 +217,6 @@ QPushButton:hover {
         color: green;
 }
 */
-
-#restartCheckBox {
-	font: 16px;
-        color: #06004C;
-}
 
 /* Partitioning module.
 
