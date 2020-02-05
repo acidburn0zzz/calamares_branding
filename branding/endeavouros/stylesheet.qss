@@ -42,11 +42,6 @@ object names (ids), which you can find through debugging tools.
 	padding-top: 30px;
 }
 
-QLabel {
-	font: 16px;
-        color: #06004C;
-}
-
 #languageWidget {
 	font: 16px;
 	color: #06004C;
@@ -78,20 +73,13 @@ QLabel {
 
 PartitionLabelsView:text {
 	font: 16px;
-	text-color: #06004C;
-
+	color: #06004C;
 }
 
 QWidget {
 	Background-color: #CDCCDB;
 	font: 16px;
-	text-color: #06004C;
-}
-
-QTextEdit, QListView {
-    	background-color: #CDCCDB;
-    	font : 16px;
-    	color: #06004C;
+	color: #06004C;
 }
 
 QListView::item:alternate {
@@ -117,13 +105,12 @@ QListView::item:hover {
 QComboBox {
 	background: #CDCCDB;
     	font: 16px;
-    	color: #06004C;
 }
 
 QComboBox::item:selected {
 	background: #06004C;
     	font: 16px;
-    	color: #CDCCDB;
+    	color: #FFFFFF;
 	padding: 5px;
 }
 
@@ -171,12 +158,6 @@ QRadioButton::indicator {
 	heiht: 16px;
 }
 
-/*
-QPushButton#buttonRestore {
-	image: url(restore.png);
-}
-*/
-
 /* QPushButton#view-button-back, QPushButton#view-button-next,
 QPushButton#view-button-cancel, QPushButton#buttonRestore,
 QPushButton#view-button-modify, QPushButton#newPartitionTableButton,
@@ -218,35 +199,24 @@ QPushButton:hover {
     	padding: 6px;
 }
 
-#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, #textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, #textBoxAutoLogin {
+#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
+#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
+#textBoxAutoLogin {
 	font: 16px;
         color: #06004C;
-}
-
-#labelFullName {
-	font: 16px;
-        color: #52134C;
-}
-
-#FinishedPage #mainText {
-	font : 16px;
-	color: #383370;
-}
-
-#summaryStep {
-	background: #9B99B7;
-	font: 16px;
-        text-color: #06004C;
 }
 
 #restartCheckBox {
 	font: 16px;
-        color: #06004C;
+	color: #06004C;
 }
 
-#presentation {
-	background-color: #9B99B7;
+/*
+#labelFullName {
+	font: 16px;
+        color: green;
 }
+*/
 
 /* Partitioning module.
 

@@ -24,7 +24,7 @@ welcomeExpandingLogo:   true
 #  - "normal" or unset, expand as needed, use *windowSize*
 #  - "fullscreen", start as large as possible, ignore *windowSize*
 #  - "noexpand", don't expand automatically, use *windowSize*
-windowExpanding:    fullscreen
+windowExpanding:    normal
 
 # Size of Calamares window, expressed as w,h. Both w and h
 # may be either pixels (suffix px) or font-units (suffix em).
@@ -33,7 +33,13 @@ windowExpanding:    fullscreen
 # This setting is ignored if "fullscreen" is selected for
 # *windowExpanding*, above. If not set, use constants defined
 # in CalamaresUtilsGui, 800x520.
-# windowSize: 800px,520px
+windowSize: 1107px,720px
+
+# Placement of Calamares window. Either "center" or "free".
+# Whether "center" actually works does depend on the window
+# manager in use (and only makes sense if you're not using
+# *windowExpanding* set to "fullscreen").
+windowPlacement: center
 
 # These are strings shown to the user in the user interface.
 # There is no provision for translating them -- since they
@@ -68,10 +74,12 @@ strings:
     versionedName:       EndeavourOS
     shortVersionedName:  EndeavourOS
     bootloaderEntryName: EndeavourOS
-#    productUrl:          https://endeavouros.com/
-#    supportUrl:          https://endeavouros.com/forum
-#    knownIssuesUrl:      https://github.com/endeavouros-team/calamares-offlineinstaller/issues
-#    releaseNotesUrl:     https://endeavouros.com/?page_id=83
+#   productUrl:          https://endeavouros.com/
+#   supportUrl:          https://endeavouros.com/forum
+#   knownIssuesUrl:      https://github.com/endeavouros-team/calamares-offlineinstaller/issues
+#   releaseNotesUrl:     https://endeavouros.com/?page_id=83
+
+
 # These images are loaded from the branding module directory.
 #
 # productIcon is used as the window icon, and will (usually) be used
@@ -96,7 +104,6 @@ images:
 # The slideshow is displayed during execution steps (e.g. when the
 # installer is actually writing to disk and doing other slow things).
 slideshow:               "show.qml"
-
 # There are two available APIs for the slideshow:
 #  - 1 (the default) loads the entire slideshow when the installation-
 #      slideshow page is shown and starts the QML then. The QML
@@ -106,7 +113,8 @@ slideshow:               "show.qml"
 #      onLeave() in the root object. After the installation is done,
 #      the show is stopped (first by calling onLeave(), then destroying
 #      the QML components).
-slideshowAPI: 1
+slideshowAPI: 2
+
 
 # Colors for text and background components.
 #
@@ -121,6 +129,6 @@ slideshowAPI: 1
 # the corresponding CSS attributes of #sidebarApp.
 style:
    sidebarBackground:    "#06004C"
-   sidebarText:          "#9B99B7"
-   sidebarTextSelect:    "#ffffff"
-   sidebarTextHighlight: "#383370"
+   sidebarText:          "#CDCCDB"
+   sidebarTextSelect:    "#06004C"
+   sidebarTextHighlight: "#CDCCDB"
