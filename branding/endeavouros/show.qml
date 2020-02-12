@@ -31,7 +31,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 35000
+        interval: 30000
         running: true
         repeat: true
         onTriggered: nextSlide()
@@ -142,6 +142,17 @@ Presentation
         Image {
             id: background_11
  	    source: "11_endeavouros_slide.png"
+            width: 1002; height: 651
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+
+            Slide {
+
+        Image {
+            id: background_12
+ 	    source: "12_endeavouros_slide.png"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
