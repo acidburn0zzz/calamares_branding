@@ -16,18 +16,19 @@ object names (ids), which you can find through debugging tools.
 
 */
 
-/* color1: #06004C */ /* color7: #06004C */
-/* color2: #383370 */ /* color8: #383370 */
-/* color3: #6A6694 */ /* color9: #6A6694 */
-/* color4: #9B99B7 */ /* color10: #9B99B7 */
-/* color5: #CDCCDB */ /* color11: #CDCCDB */
-/* color5: #E3E3EA */ /* color12: #E3E3EA */
+/*
 
-/* Main application window. */
+BLUE THEME             PURPLE THEME
+color1: #06004C        color7:  #
+color2: #383370        color8:  #
+color3: #6A6694        color9:  #
+color4: #9B99B7        color10: #
+color5: #CDCCDB        color11: #
+color5: #E3E3EA        color12: #
 
-#mainText {
-	color: #06004C;
-}
+*/
+
+/* ########## Main application window ########## */
 
 #sidebarApp {
 	background-color: #06004C;
@@ -39,52 +40,41 @@ object names (ids), which you can find through debugging tools.
 
 #sidebarMenuApp {
 	background-color: #06004C;
+	font: 20px;
 	padding-top: 30px;
 }
 
-#languageWidget {
-	font: 16px;
-	color: #06004C;
-}
-
-#debugButton {
-	background-color: none;
-	color: #9B99B7;
-	font: 13px;
-}
-
-#aboutButton {
-	background-color: none;
-	font : 16px;
-	color: #06004C;
-}
-
-#aboutButton:hover {
-	background-color: none;
-	font : 16px;
-	color: #FFFFFF;
-}
-
-#aboutButton:pressed {
-	background-color: none;
-	font : 16px;
-	color: #FF7F7F;
-}
-
-PartitionLabelsView:text {
-	font: 16px;
+#mainText {
 	color: #06004C;
 }
 
 QWidget {
-	Background-color: #CDCCDB;
+	background-color: #CDCCDB;
 	font: 16px;
 	color: #06004C;
 }
 
+QListWidget::item:alternate {
+	background: #CDCCDB;
+	color: #06004C;
+}
+
+/* ########## KEYBOARD PAGE  ########## */
+
+#LE_TestKeyboard {
+    	font : 16px;
+    	color: #383370;
+}
+
+#deviceInfoIcon {
+	color: #06004C;
+}
+
+/* ########## LIST VIEW ########## */
+
 QListView::item:alternate {
-	background: #06004C;
-	color: white;
+	background: #CDCCDB;
+	color: #06004C;
 }
 
 QListView::item:selected:active {
@@ -102,6 +92,8 @@ QListView::item:hover {
 	color: white;
 }
 
+/* ########## COMBO BOX ########## */
+
 QComboBox {
 	background: #CDCCDB;
     	font: 16px;
@@ -109,23 +101,141 @@ QComboBox {
 
 QComboBox::item:selected {
 	background: #06004C;
-    	font: 16px;
     	color: #FFFFFF;
 	padding: 5px;
 }
 
-#LE_TestKeyboard {
-    	font : 16px;
-    	color: #383370;
-}
+/* ########## TOOLTIP ########## */
 
 QToolTip {
 	background: #52134C;
-        font : 17px;
+        font : 16px;
 	color: #DCD0DB;
 	border: none;
+	padding: 3px;
+}
+
+/* ########## BUTTONS GENERAL/GENERAL_B/SUBCATEGORY ########## */
+
+QPushButton {
+	background-color: #E3E3EA;
+    	border: 1px solid #06004C;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+    	min-width: 4em;
+    	padding: 6px;
+}
+
+QPushButton:pressed {
+    	background-color: #7F3FBF;
+    	color: #CDCCDB;
+}
+
+QPushButton:hover {
+	background-color: #06004C;
+	color: #CDCCDB;
+}
+
+QPushButton#view-button-modify, QPushButton#createButton, 
+QPushButton#deleteButton, QPushButton#editButton {
+	background-color: #CDCCDB;
+}
+
+QPushButton#view-button-modify:pressed, QPushButton#createButton:pressed, 
+QPushButton#deleteButton:pressed, QPushButton#editButton:pressed {
+	background-color: #7F3FBF;
+    	color: #CDCCDB;
+}
+
+QPushButton#view-button-modify:hover, QPushButton#createButton:hover, 
+QPushButton#deleteButton:hover, QPushButton#editButton:hover {
+	background-color: #06004C;
+}
+
+QPushButton#newPartitionTableButton, QPushButton#newVolumeGroupButton, 
+QPushButton#resizeVolumeGroupButton, QPushButton#deactivateVolumeGroupButton, 
+QPushButton#removeVolumeGroupButton, QPushButton#buttonRestore {
+	background-color: #9B99B7;
+    	font: 13px;
 	padding: 5px;
 }
+
+QPushButton#newPartitionTableButton:pressed, QPushButton#newVolumeGroupButton:pressed, 
+QPushButton#resizeVolumeGroupButton:pressed, QPushButton#deactivateVolumeGroupButton:pressed, 
+QPushButton#removeVolumeGroupButton:pressed, QPushButton#buttonRestore:pressed {
+	background-color: #7F3FBF;
+    	color: #CDCCDB;
+}
+
+QPushButton#newPartitionTableButton:hover, QPushButton#newVolumeGroupButton:hover, 
+QPushButton#resizeVolumeGroupButton:hover, QPushButton#deactivateVolumeGroupButton:hover, 
+QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
+	background-color: #06004C;
+}
+
+#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
+#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
+#textBoxAutoLogin {
+	font: 16px;
+        color: #06004C;
+	border: 1px solid #06004C;
+}
+
+#debugButton {
+	background-color: #06004C;
+	color: #CDCCDB;
+	font: bold 8px;
+	height: 30px;
+    	padding: 0px;
+}
+
+#debugButton:pressed {
+	color: #7F3FBF;
+}
+
+#debugButton:hover {
+	color: #FFFFFF;
+}
+
+#aboutButton {
+	background-color: none;
+    	border: none;
+	color: #06004C;
+	font: 16px;
+}
+
+#aboutButton:pressed {
+	color: #7F3FBF;
+}
+
+#aboutButton:hover {
+	color: #7F3FBF;
+}
+
+/* ########## RADIO BUTTON ########## */
+
+QRadioButton {    	
+	color: #06004C;
+	padding-left: 3px;
+}
+
+QRadioButton::indicator {
+	color: #06004C;    	
+	width: 16px;
+	height: 16px;
+}
+
+/* ########## CHECK BOX ########## */
+
+QCheckBox {
+	spacing: 5px;
+}
+
+QCheckBox::indicator:unchecked {
+	border: 1px solid #06004C;
+}
+
+/* ########## PROGRESS BAR ########## */
 
 QProgressBar {
 	background-color: #9B99B7;
@@ -139,89 +249,11 @@ QProgressBar::chunk {
     	background-color: #06004C;
 }
 
-QCheckBox {
-	color: #06004C;
-}
-
-QCheckBox::indicator {
-    	width: 16px;
-    	height: 16px;
-}
-
-QRadioButton {    	
-	color: #06004C;
-	padding-left: 3px;
-}
-
-QRadioButton::indicator {    	
-	width: 16px;
-	heiht: 16px;
-}
-
-/* QPushButton#view-button-back, QPushButton#view-button-next,
-QPushButton#view-button-cancel, QPushButton#buttonRestore,
-QPushButton#view-button-modify, QPushButton#newPartitionTableButton,
-QPushButton#createButton, QPushButton#editButton, 
-QPushButton#newVolumeGroupButton, QPushButton#resizeVolumeGroupButton,
-QPushButton#deactivateVolumeGroupButton, QPushButton#removeVolumeGroupButton,*/
-QPushButton {
-    	background-color: #E3E3EA;
-    	border: none;
-    	font: bold 15px;
-    	color: #06004C;
-    	min-width: 4em;
-    	padding: 6px;
-}
-
-/* QPushButton#view-button-back:pressed, QPushButton#view-button-next:pressed,
-QPushButton#newPartitionTableButton:pressed, QPushButton#createButton:pressed,
-QPushButton#newVolumeGroupButton:pressed, QPushButton#resizeVolumeGroupButton:pressed,
-QPushButton#deactivateVolumeGroupButton:pressed, QPushButton#removeVolumeGroupButton:pressed,*/
-QPushButton:pressed {
-    	background-color: #FF7F7F;
-    	font: bold 15px;
-    	color: #CDCCDB;
-    	min-width: 4em;
-    	padding: 6px;
-}
-
-/* QPushButton#view-button-back:hover, QPushButton#view-button-next:hover,
-QPushButton#view-button-cancel:hover, QPushButton#buttonRestore:hover,
-QPushButton#view-button-modify:hover, QPushButton#newPartitionTableButton:hover,
-QPushButton#createButton:hover, QPushButton#editButton:hover,
-QPushButton#newVolumeGroupButton:hover, QPushButton#resizeVolumeGroupButton:hover,
-QPushButton#deactivateVolumeGroupButton:hover, QPushButton#removeVolumeGroupButton:hover,*/
-QPushButton:hover {
-	background-color: #06004C;
-	font: bold 15px;
-	color: #CDCCDB;
-	min-width: 4em;
-    	padding: 6px;
-}
-
-#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
-#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
-#textBoxAutoLogin {
-	font: 16px;
-        color: #06004C;
-}
-
-#restartCheckBox {
-	font: 16px;
-	color: #06004C;
-}
-
-/*
-#labelFullName {
-	font: 16px;
-        color: green;
-}
-*/
 
 /* Partitioning module.
 
 #bootInfoIcon { }
-#bootInfoLable { }
+#bootInfoLabel { }
 #deviceInfoIcon { }
 #defineInfoLabel { }
 #scrollAreaWidgetContents { }
