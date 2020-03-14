@@ -265,6 +265,7 @@ QProgressBar::chunk {
 #defineInfoLabel { }
 #scrollAreaWidgetContents { }
 #partitionBarView { }
+
 */
 
 
@@ -272,4 +273,5 @@ QProgressBar::chunk {
 
 #licenseItem {  }
 #licenseItemFullText {  }
+
 */
