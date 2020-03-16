@@ -18,13 +18,20 @@ object names (ids), which you can find through debugging tools.
 
 /*
 
-BLUE THEME             PURPLE THEME
-color1: #06004C        color7:  #
-color2: #383370        color8:  #
-color3: #6A6694        color9:  #
-color4: #9B99B7        color10: #
-color5: #CDCCDB        color11: #
-color5: #E3E3EA        color12: #
+BLUE THEME OFFLINE	PURPLE THEME ONLINE
+color01: #06004C	color09: #
+color02: #383370	color10: #
+color03: #6A6694	color11: #
+color04: #9B99B7	color12: #
+color05: #CDCCDB	color13: #
+color06: #E3E3EA	color14: #
+color07: #52134C	color15: #
+color08: #DCD0DB	color16: #
+
+ENDEAVOUROS LOGO
+color17: #7F3FBF     	purple
+color18: #7F7FFF     	blue
+color19: #FF7F7F     	orange
 
 */
 
@@ -115,7 +122,7 @@ QToolTip {
 	padding: 3px;
 }
 
-/* ########## BUTTONS GENERAL/GENERAL_B/SUBCATEGORY ########## */
+/* ########## BUTTONS GENERAL A/GENERAL B/SUBCATEGORY ########## */
 
 QPushButton {
 	background-color: #E3E3EA;
@@ -183,8 +190,8 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 
 #debugButton {
 	background-color: #06004C;
-	color: #CDCCDB;
 	font: bold 8px;
+	color: #CDCCDB;
 	height: 30px;
     	padding: 0px;
 }
@@ -199,9 +206,9 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 
 #aboutButton {
 	background-color: none;
-    	border: none;
-	color: #06004C;
 	font: 16px;
+	color: #06004C;
+    	border: none;
 }
 
 #aboutButton:pressed {
@@ -239,10 +246,10 @@ QCheckBox::indicator:unchecked {
 
 QProgressBar {
 	background-color: #9B99B7;
+	color: #FFFFFF;
     	border: 2px solid #06004C;
    	border-radius: 0px;
 	text-align: center;
-	color: #FFFFFF;
 }
 
 QProgressBar::chunk {
@@ -258,6 +265,7 @@ QProgressBar::chunk {
 #defineInfoLabel { }
 #scrollAreaWidgetContents { }
 #partitionBarView { }
+
 */
 
 
@@ -265,4 +273,5 @@ QProgressBar::chunk {
 
 #licenseItem {  }
 #licenseItemFullText {  }
+
 */
