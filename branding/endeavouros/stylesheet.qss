@@ -6,17 +6,29 @@ In principle, all parts can be styled through CSS.
 Missing parts should be filed as issues.
 
 The IDs are based on the object names in the C++ code.
+You can use the Debug Dialog to find out object names:
+  - Open the debug dialog
+  - Choose tab *Tools*
+  - Click *Widget Tree* button
+The list of object names is printed in the log.
 
 Documentation for styling Qt Widgets through a stylesheet
 can be found at
     https://doc.qt.io/qt-5/stylesheet-examples.html
+    https://doc.qt.io/qt-5/stylesheet-reference.html
 In Calamares, styling widget classes is supported (e.g.
-using `QComboBox` as a selector). You can also use specific
-object names (ids), which you can find through debugging tools.
+using `QComboBox` as a selector).
+
+This example stylesheet has all the actual styling commented out.
+The examples are not exhaustive.
 
 */
 
-/*
+/* 
+
+EndeavourOS Calamares Theme by FLVAL
+https://github.com/FLVAL/calamares_branding
+https://github.com/endeavouros-team/calamares_branding
 
 BLUE THEME OFFLINE	PURPLE THEME ONLINE
 color01: #06004C	color09: #
@@ -35,7 +47,7 @@ color19: #FF7F7F     	orange
 
 */
 
-/* ########## Main application window ########## */
+/* ########## MAIN APPLICATION WINDOW ########## */
 
 #sidebarApp {
 	background-color: #06004C;
@@ -47,6 +59,7 @@ color19: #FF7F7F     	orange
 
 #sidebarMenuApp {
 	background-color: #06004C;
+	background-image: url(/usr/share/calamares/branding/endeavouros/img/bg_sidebar_left.png);
 	font: 20px;
 	padding-top: 30px;
 }
@@ -66,12 +79,39 @@ QListWidget::item:alternate {
 	color: #06004C;
 }
 
-/* ########## KEYBOARD PAGE  ########## */
-
-#LE_TestKeyboard {
-    	font : 16px;
-    	color: #383370;
+QTextEdit, QListView {
+    	background-color: #E3E3EA;
 }
+
+QDialogButtonBox { 
+	dialogbuttonbox-buttons-have-icons: 0;
+}
+
+QAbstractSpinBox {
+	background: #E3E3EA;
+}
+
+#partitionLabel {
+	background: #E3E3EA;
+}
+
+#CreatePartitionDialog {
+	background: #CDCCDB;	
+}
+
+#m_previewBeforeFrame, #m_previewAfterFrame {
+	background: #E3E3EA;
+}
+
+#partResizerWidget {
+	border: 1px solid #06004C;
+}
+
+#allowWeakPasswords {
+	border: 1px solid red;	
+}
+
+/* ########## KEYBOARD PAGE  ########## */
 
 #deviceInfoIcon {
 	color: #06004C;
@@ -80,8 +120,14 @@ QListWidget::item:alternate {
 /* ########## LIST VIEW ########## */
 
 QListView::item:alternate {
-	background: #CDCCDB;
+	background: #E3E3EA;
 	color: #06004C;
+}
+
+QListView::item:!alternate:selected:active {
+	background: qlineargradient(x1: 0, y1: 1, x2: 1, y2: 1,
+        stop: 0 #06004C, stop: 0.739 #06004C,
+        stop: 0.74 white, stop: 1.0 white);
 }
 
 QListView::item:selected:active {
@@ -99,17 +145,136 @@ QListView::item:hover {
 	color: white;
 }
 
+QListView#listLayout::item:!alternate:selected:active {
+	background: #06004C;
+}
+
+QListView#listVariant::item:!alternate:selected:active {
+	background: #06004C;
+}
+
+/* ########## LINE EDIT ########## */
+
+QLineEdit#textBoxFullName, QLineEdit#textBoxUsername, QLineEdit#textBoxHostname,
+QLineEdit#textBoxUserPassword, QLineEdit#textBoxUserVerifiedPassword,
+QLineEdit#textBoxRootPassword, QLineEdit#textBoxVerifiedRootPassword,
+QLineEdit#LE_TestKeyboard, QLineEdit#m_passphraseLineEdit,
+QLineEdit#m_confirmLineEdit, QLineEdit#vgName { 
+	background: #E3E3EA;
+}
+
+#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
+#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
+#textBoxAutoLogin, #LE_TestKeyboard, #m_passphraseLineEdit, #m_confirmLineEdit,
+#vgName {
+	font: 16px;
+        color: #06004C;
+	border: 1px solid #06004C;
+}
+
 /* ########## COMBO BOX ########## */
 
 QComboBox {
 	background: #CDCCDB;
-    	font: 16px;
+    	selection-background-color: #06004C;
+	font: 16px;
+}
+
+QComboBox::down-arrow {
+	background: #E3E3EA;
+	image: url(/usr/share/calamares/branding/endeavouros/img/launchpad_16x16.png);
+	width: 14px;
+	height: 14px;
 }
 
 QComboBox::item:selected {
 	background: #06004C;
     	color: #FFFFFF;
 	padding: 5px;
+}
+
+#mountPointComboBox:editable {
+	background: #E3E3EA;
+}
+
+#mountPointComboBox {
+    	selection-background-color: #06004C;
+}
+
+#mountPointComboBox::drop-down {
+	background: #E3E3EA;
+	padding-left: 2px;
+	border: 1px;
+	border-left-color: #E3E3EA;
+	border-top-color: #E3E3EA;
+	border-right-color: #3B3B3B;
+	border-bottom-color: #3B3B3B;
+	border-style: solid;
+}
+
+QSpinBox {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #06004C;
+	height: 24px;
+}
+
+QSpinBox::up-button {
+	width: 18px;
+}
+
+QSpinBox::down-button {
+	width: 18px;
+}
+
+/* ########## TREE VIEW ########## */
+
+QTreeView {
+	background: #E3E3EA;
+	show-decoration-selected: 0;
+}
+
+QTreeView::item {
+	border: 1px dotted #06004C;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+QTreeView::item:selected {
+	background: #06004C;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_vline.png) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_more.png) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_end.png) 0;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: url(/usr/share/calamares/branding/endeavouros/img/branch_closed.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: url(/usr/share/calamares/branding/endeavouros/img/branch_open.png);
+}
+
+/* ########## HEADER VIEW ########## */
+
+QHeaderView::section {
+	background-color: #383370;
+	color: white;
+	border: 1px dotted white;
+	padding-left: 4px;
 }
 
 /* ########## TOOLTIP ########## */
@@ -161,7 +326,7 @@ QPushButton#deleteButton:hover, QPushButton#editButton:hover {
 
 QPushButton#newPartitionTableButton, QPushButton#newVolumeGroupButton, 
 QPushButton#resizeVolumeGroupButton, QPushButton#deactivateVolumeGroupButton, 
-QPushButton#removeVolumeGroupButton, QPushButton#buttonRestore {
+QPushButton#removeVolumeGroupButton {
 	background-color: #9B99B7;
     	font: 13px;
 	padding: 5px;
@@ -180,20 +345,21 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 	background-color: #06004C;
 }
 
-#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
-#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
-#textBoxAutoLogin {
-	font: 16px;
-        color: #06004C;
-	border: 1px solid #06004C;
+#buttonRestore {
+	image: url(/usr/share/calamares/branding/endeavouros/img/restore_.png);
+}
+
+#buttonRestore:hover {
+	image: url(/usr/share/calamares/branding/endeavouros/img/restore_hov.png);
 }
 
 #debugButton {
 	background-color: #06004C;
 	font: bold 8px;
 	color: #CDCCDB;
-	height: 30px;
+	height: 32px;
     	padding: 0px;
+	border: none;
 }
 
 #debugButton:pressed {
@@ -221,15 +387,22 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 
 /* ########## RADIO BUTTON ########## */
 
-QRadioButton {    	
+QRadioButton {
 	color: #06004C;
 	padding-left: 3px;
 }
 
-QRadioButton::indicator {
-	color: #06004C;    	
+QRadioButton::indicator {    	
 	width: 16px;
 	height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(/usr/share/calamares/branding/endeavouros/img/radiobutton_unchecked.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(/usr/share/calamares/branding/endeavouros/img/radiobutton_checked.png);
 }
 
 /* ########## CHECK BOX ########## */
@@ -239,7 +412,15 @@ QCheckBox {
 }
 
 QCheckBox::indicator:unchecked {
-	border: 1px solid #06004C;
+	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_checked.png);
+}
+
+QItemSelectionModel::Select {
+	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_checked.png);
 }
 
 /* ########## PROGRESS BAR ########## */
@@ -255,7 +436,6 @@ QProgressBar {
 QProgressBar::chunk {
     	background-color: #06004C;
 }
-
 
 /* Partitioning module.
 
