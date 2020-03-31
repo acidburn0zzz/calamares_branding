@@ -30,20 +30,22 @@ EndeavourOS Calamares Theme by FLVAL
 https://github.com/FLVAL/calamares_branding
 https://github.com/endeavouros-team/calamares_branding
 
-BLUE THEME OFFLINE	PURPLE THEME ONLINE
-color01: #06004C	color09: #
-color02: #383370	color10: #
-color03: #6A6694	color11: #
-color04: #9B99B7	color12: #
-color05: #CDCCDB	color13: #
-color06: #E3E3EA	color14: #
-color07: #52134C	color15: #
-color08: #DCD0DB	color16: #
+BLUE THEME OFFLINE
+color01: #06004C	blue night
+color02: #383370	     |
+color03: #6A6694	     |
+color04: #9B99B7	     |
+color05: #CDCCDB	     |
+color06: #E3E3EA	clearest
+color07: #52134C	tooltip purple
+color08: #DCD0DB	tooltip text
+color09: #7F1D00	error red
+color10: #3F5924	valid green
 
 ENDEAVOUROS LOGO
-color17: #7F3FBF     	purple
-color18: #7F7FFF     	blue
-color19: #FF7F7F     	orange
+color11: #7F3FBF     	purple
+color12: #7F7FFF     	blue
+color13: #FF7F7F     	orange
 
 */
 
@@ -107,10 +109,6 @@ QAbstractSpinBox {
 	border: 1px solid #06004C;
 }
 
-#allowWeakPasswords {
-	border: 1px solid red;	
-}
-
 /* ########## KEYBOARD PAGE  ########## */
 
 #deviceInfoIcon {
@@ -170,6 +168,13 @@ QLineEdit#m_confirmLineEdit, QLineEdit#vgName {
 	font: 16px;
         color: #06004C;
 	border: 1px solid #06004C;
+}
+
+/* ########## LABEL ########## */
+
+#labelUsernameError, #labelHostnameError, 
+#labelUserPasswordError, #labelRootPasswordError {
+	color: #7F1D00;
 }
 
 /* ########## COMBO BOX ########## */
