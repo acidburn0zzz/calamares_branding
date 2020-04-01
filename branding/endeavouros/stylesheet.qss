@@ -109,6 +109,14 @@ QAbstractSpinBox {
 	border: 1px solid #06004C;
 }
 
+PartitionBarsView::item {
+	border: 1px solid green;
+}
+
+#partitionLabelsView {
+	background: #E3E3EA;
+}
+
 /* ########## KEYBOARD PAGE  ########## */
 
 #deviceInfoIcon {
@@ -172,8 +180,9 @@ QLineEdit#m_confirmLineEdit, QLineEdit#vgName {
 
 /* ########## LABEL ########## */
 
-#labelUsernameError, #labelHostnameError, 
-#labelUserPasswordError, #labelRootPasswordError {
+#labelFullNameError, #labelUsernameError,
+#labelHostnameError, #labelUserPasswordError,
+#labelRootPasswordError {
 	color: #7F1D00;
 }
 
