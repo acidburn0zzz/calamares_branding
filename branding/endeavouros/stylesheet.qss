@@ -89,11 +89,6 @@ QAbstractSpinBox {
 	background: #E3E3EA;
 }
 
-#PartitionSize {
-	font: 40px;
-	border: 1px solid red;
-}
-
 /* ########## KEYBOARD PAGE  ########## */
 
 #deviceInfoIcon {
