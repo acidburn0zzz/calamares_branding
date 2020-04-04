@@ -66,10 +66,6 @@ color13: #FF7F7F     	orange
 	padding-top: 30px;
 }
 
-#mainText {
-	color: #06004C;
-}
-
 QWidget {
 	background-color: #CDCCDB;
 	font: 16px;
@@ -93,28 +89,9 @@ QAbstractSpinBox {
 	background: #E3E3EA;
 }
 
-#partitionLabel {
-	background: #E3E3EA;
-}
-
-#CreatePartitionDialog {
-	background: #CDCCDB;	
-}
-
-#m_previewBeforeFrame, #m_previewAfterFrame {
-	background: #E3E3EA;
-}
-
-#partResizerWidget {
-	border: 1px solid #06004C;
-}
-
-PartitionBarsView::item {
-	border: 1px solid green;
-}
-
-#partitionLabelsView {
-	background: #E3E3EA;
+#PartitionSize {
+	font: 40px;
+	border: 1px solid red;
 }
 
 /* ########## KEYBOARD PAGE  ########## */
@@ -180,6 +157,30 @@ QLineEdit#m_confirmLineEdit, QLineEdit#vgName {
 
 /* ########## LABEL ########## */
 
+#mainText {
+	color: #06004C;
+}
+
+#partitionLabel {
+	background: #E3E3EA;
+}
+
+#partitionLabelsView {
+	background: #E3E3EA;
+}
+
+#CreatePartitionDialog {
+	background: #CDCCDB;	
+}
+
+#partResizerWidget {
+	border: 1px solid #06004C;
+}
+
+#m_previewBeforeFrame, #m_previewAfterFrame {
+	background: #E3E3EA;
+}
+
 #labelFullNameError, #labelUsernameError,
 #labelHostnameError, #labelUserPasswordError,
 #labelRootPasswordError {
@@ -226,6 +227,8 @@ QComboBox::item:selected {
 	border-style: solid;
 }
 
+/* ########## SPIN BOX ########## */
+
 QSpinBox {
 	border-width: 1px;
 	border-style: solid;
@@ -245,6 +248,7 @@ QSpinBox::down-button {
 
 QTreeView {
 	background: #E3E3EA;
+	font: 14px;
 	show-decoration-selected: 0;
 }
 
